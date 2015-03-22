@@ -46,5 +46,5 @@ run_analysis <- function() {
   
   # Means by Activity and Subject, and write them out
   means = group_by(merged,Activity,Subject)%>%summarise_each(funs(mean))
-  write.table(means,"MTD_with_Means.txt",row.name=FALSE)
+  write.table(means,"Means_by_Activity_Subject.txt",row.name=FALSE)
 }
